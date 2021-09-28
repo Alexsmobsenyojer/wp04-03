@@ -32,9 +32,19 @@ class User extends Computer
         $this->surname = $surname;
     
     }
+    public function getSurname()
+    {
+        return  $this->surname;
+    
+    }
     public function setEmail(string $email)
     {
         $this->email = $email;
+    
+    }
+    public function getEmail()
+    {
+        return  $this->email;
     
     }
     public function setBirth(string $birth)
@@ -42,19 +52,29 @@ class User extends Computer
         $this->birth = $birth;
     
     }
+    public function getBirth()
+    {
+        return  $this->birth;
+    
+    }
     public function setGender(string $gender)
     {
         $this->gender = $gender;
     
     }
+    public function getGender()
+    {
+        return  $this->gender;
+    
+    }
 
-public function assignComputer(Computer $pc1)
+public function assignComputer()
     {
         
     }
     
-public function getComputer(Computer $pc1)
-    {return $this->pc1;}
+public function getComputer()
+    {return $this->;}
 }
 
 $user1 = new User("Deez","Nuts","pudding@deeznuts.com","6.9.2000","fluid");
