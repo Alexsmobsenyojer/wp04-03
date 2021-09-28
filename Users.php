@@ -75,9 +75,15 @@ public function assignComputer(Computer $pc1)
     
 public function getComputer()
     {return $this->pc1;}
+
 }
 
 $user1 = new User("Deez","Nuts","pudding@deeznuts.com","6.9.2000","fluid");
 $user1->setName('Alex');
+echo "<br />";
+echo $user1->getName();
+echo "<br />";
 $user1 -> assignComputer($pc1);
+$user1->getComputer();
+var_dump($pc1);
 ?>
