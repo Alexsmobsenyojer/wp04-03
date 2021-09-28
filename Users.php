@@ -7,7 +7,7 @@ class User extends Computer
     private string $email;
     private string $birth;
     private string $gender;
-    private string $pc;
+    
 
     public function __construct(string $name,string $surname, string $email, string $birth, string $gender)
     { 
@@ -68,13 +68,13 @@ class User extends Computer
     
     }
 
-public function assignComputer()
+public function assignComputer(Computer $pc1)
     {
-        
+        $this->pc1 = $pc1;
     }
     
 public function getComputer()
-    {return $this->;}
+    {return $this->pc1;}
 }
 
 $user1 = new User("Deez","Nuts","pudding@deeznuts.com","6.9.2000","fluid");
